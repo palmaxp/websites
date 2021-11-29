@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>    
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/729/PNG/128/google_icon-icons.com_62736.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body >
+    <nav>
+        <li><a href="#" onclick="imgtherock()">Gmail</a></li>
+        <li><a href="#" onclick="imgtherock()">Imagens</a></li>
+        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/3x3dot-black.svg/768px-3x3dot-black.svg.png" id="img-grid" alt="imagem de grid" onclick="imgtherock()"></li>
+        <li><button onclick="imgtherock()">Fazer login</button></li>
+    </nav>
+    
+    <main>
+        <a href="#" onclick="imgtherock()">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+        </a>
+        <div id="input-box" onclick="darfoco()" onkeydown="if(event.keyCode == 13) {pesquisar()}">
+            <img id="search" src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="" onclick="pesquisar()">
+            <input type="text" id="input">
+            <img id="mic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/712px-Google_mic.svg.png" alt="">
+        </div>
+        <div class="botoes">
+            <button onclick="pesquisar()">Pesquisa Google</button>
+            <button onclick="imgtherock()">Estou com sorte</button>
+        </div>
+        <a id="link2" href="#" onclick="imgtherock()">Celebre o dia do macaco albino!</a>
+    </main>
+    <img src="https://c.tenor.com/TofJrkqD9JMAAAAC/impressed-awsome.gif" alt=""
+    id="tr">
+
+
+    <script type="text/javascript">
+        let therock = document.querySelector('#tr');
+        let input = document.querySelector('#input').value;
+
+        var textoBusca = input.replace(" ", "+");
+        console.log(textoBusca)
+        function imgtherock(){
+            therock.classList.toggle("active");      
+        }      
+        function darfoco(){
+            input.focus();
+        }
+        function pesquisar(){
+            window.location.href = `https://www.bing.com/search?q=rato+timido&qs=n&form=QBRE&sp=-1&pq=rato+tim&sc=8-8&sk=&cvid=3167B4FE731C4A8D9921A965C5E498B4`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,365 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+body a:hover {
+  text-decoration: underline;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+header {
+  background-color: #4f91cd;
+  padding: 35px 0;
+}
+header > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header div nav {
+  flex: 2;
+}
+header div img {
+  flex: 1;
+}
+header div div {
+  flex: 2;
+  text-align: right;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  padding: 10px 20px;
+}
+header nav ul li::before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  background-color: #fff;
+}
+header nav ul li:nth-child(1)::before {
+  display: none;
+}
+header nav ul li:nth-child(1) a {
+  padding-left: 0;
+}
+header div div a {
+  padding: 10px 20px;
+  border: 1px solid #9ac9f4;
+  border-radius: 5px;
+  display: inline-block;
+}
+header div div a:hover {
+  color: #9ac9f4;
+  background-color: #fff;
+}
+header div div a:nth-child(1) {
+  margin-right: 20px;
+}
+header div div a::before {
+  content: url(img/link.svg);
+  margin-right: 10px;
+}
+header div div a:nth-child(2)::before {
+  content: url(img/search.svg);
+}
+.nav-bottom {
+  background-color: #043867;
+}
+.nav-bottom nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav-bottom nav ul li {
+  display: block;
+  flex: 1 1 200px;
+}
+.nav-bottom nav ul li a {
+  display: block;
+  padding: 25px 0;
+  text-align: center;
+  border: 1px solid #1f5280;
+}
+.nav-bottom nav ul li a:hover {
+  background-color: #002342;
+}
+.intro {
+  margin-top: 80px;
+  padding: 90px 0;
+  background: url(img/intro.jpg) no-repeat center center;
+  background-size: cover;
+}
+.intro div {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.intro div h1 {
+  font-size: 4.5em;
+  line-height: 155%;
+  font-weight: 100;
+}
+.intro div h2 {
+  font-size: 2.5em;
+  line-height: 155%;
+  font-weight: normal;
+}
+.cac {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 44px;
+  background-color: #7aa120;
+}
+.cac a {
+  text-decoration: underline;
+}
+.cac a:hover {
+  text-decoration: underline;
+}
+.cac h3 {
+  font-size: 3em;
+  min-width: 120px;
+}
+.cac p {
+  font-size: 1em;
+  margin-left: 10px;
+  max-width: 550px;
+}
+.list-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  row-gap: 30px;
+}
+.list-item .item {
+  background-color: #e7ecf0;
+  height: 300px;
+  padding: 30px;
+}
+.list-item .item > h3 {
+  color: #428bca;
+  font-size: 2.25em;
+}
+.list-item .item p {
+  margin-top: 15px;
+  color: #757aa4;
+  line-height: 130%;
+}
+.list-item .item-2 {
+  color: #fff;
+  background-color: #620e6e;
+}
+.list-item .item-2 h3 {
+  color: #fff;
+}
+.list-item .item-2 a {
+  display: block;
+  font-size: 2.25em;
+  margin-top: 40px;
+}
+.list-item .item-2 a {
+  text-decoration: underline;
+}
+.list-item .item-2 a:hover {
+  text-decoration: underline;
+}
+.list-item .item:nth-last-child(2) {
+  background-color: #4385c1;
+}
+.list-item .item-3 {
+  background-color: unset;
+  padding: 0px;
+}
+.item-3 {
+  font-family: 'Roboto Slab', serif;
+}
+.item-3 > div:nth-child(1) {
+  color: #34383c;
+  letter-spacing: 0.025em;
+}
+.item-item {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.item-box {
+  font-family: 'Roboto', sans-serif;
+  padding: 6px 13px;
+  width: 70px;
+  text-align: center;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  color: #7aa120;
+}
+.item-box div:nth-child(2) {
+  font-size: 40px;
+}
+.item-item > div:last-child {
+  margin-left: 33px;
+  max-width: 200px;
+  color: #4385c1;
+}
+.item-3 > div:last-child {
+  margin-top: 15px;
+}
+.nav-bottom-2 ul {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav-bottom-2 ul li a {
+  text-align: center;
+  display: block;
+  width: 260px;
+  padding: 18px 0;
+  color: #4f91cd;
+  border: 1px solid #4f91cd;
+  border-radius: 5px;
+}
+.nav-bottom-2 ul li a:hover {
+  background-color: #4f91cd;
+  color: #fff;
+}
+footer {
+  background-color: #34383c;
+  margin-top: 70px;
+  padding-top: 80px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-list-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 65px;
+  row-gap: 65px;
+  width: 80%;
+}
+.footer-item h3 {
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  letter-spacing: 0.035em;
+}
+.footer-item ul {
+  margin-top: 23px;
+}
+.footer-item ul li {
+  margin-top: 10px;
+}
+.footer-item ul li a {
+  color: #acb6bb;
+}
+.nav-right li {
+  font-family: 'Roboto Slab', serif;
+  margin-top: 20px;
+}
+.nav-right li:nth-child(1) {
+  margin-top: 0;
+}
+.copyright {
+  margin-top: 60px;
+  border-top: 1px solid #b1b6bb;
+  padding: 60px 0 200px 0;
+}
+.copyright span {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 992px) {
+  body {
+    font-size: 12px;
+  }
+  header > div {
+    display: block;
+  }
+  header div nav {
+    text-align: center;
+  }
+  header img {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  header div div {
+    text-align: center;
+  }
+  header nav ul li::before {
+    width: 0;
+    height: 0;
+  }
+  header nav ul li:nth-child(1) a {
+    padding-left: 20px;
+  }
+  header nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    width: 120px;
+    text-align: center;
+    background-color: #043867;
+  }
+  header nav ul li a:hover {
+    background-color: #002342;
+  }
+  header div div {
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  .list-item {
+    grid-template-columns: 1fr;
+  }
+  .list-item .item {
+    height: 250px;
+  }
+  .nav-bottom-2 ul {
+    margin-top: 0;
+  }
+  .nav-bottom-2 ul li {
+    margin: 0 auto;
+  }
+  .nav-bottom-2 ul li:nth-child(1) a {
+    margin-top: 0;
+  }
+  .footer-list-item {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav-right {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 551px) {
+  .nav-bottom-2 ul li a {
+    margin-top: 20px;
+  }
+}

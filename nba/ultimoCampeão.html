@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA - Milwaukee Bucks</title>
+    <link rel="shortcut icon" href="./img/icon.ico" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="link-logo">
+                <img src="img/logo.png" alt="">
+            </a>
+            <nav>
+                <a href="Chicgoa.html">
+                    <li><span>Time Histórico</span></li>
+                </a>
+                <a href="ultimoCampeão.html">
+                    <li><span>Ultimo Campeão</span></li>
+                </a>
+            </nav>
+            <div class="botoes">
+                <audio src=""></audio>
+                <div onclick="tocarMusica()"><i class="las la-play"></i></div>
+                <div onclick="pausarMusica()"><i class="las la-pause"></i></div>
+            </div>
+        </div>
+    </header>
+    <img src="https://i2.wp.com/livebasketballbr.com/wp-content/uploads/2021/06/kevin-durant-kyrie-irving-lead-james-harden-less-nets-to-game-1-win.jpg?fit=1769%2C1200&ssl=1" width="800px" class="Champ">
+    <div class="text-box text-box-2">
+        <h2>Time</h2>
+        <p>O Milwaukee Bucks é um time de basquete profissional americano sediado em Milwaukee.
+            Os Bucks competem na National Basketball Association (NBA) como membro da Divisão Central da Conferência Leste.
+            A equipe foi fundada em 1968 como uma equipe de expansão.
+            Os Bucks ganharam dois títulos da liga (1971, 2021), três títulos da conferência (1971, 1974 e 2021) e 16 títulos da divisão (1971-1974, 1976, 1980-1986, 2001, 2019, 2020 e 2021).
+            Eles apresentaram jogadores notáveis ​​como Giannis Antetokounmpo, Kareem Abdul-Jabbar, Sidney Moncrief, Oscar Robertson, Bob Dandridge, Bob Lanier, Glenn Robinson, Ray Allen, Sam Cassell, Junior Bridgeman, Michael Redd, Terry Cummings, Vin Baker, Jon McGlocklin e Marques Johnson.
+        </p>
+    </div>
+
+    <img src="https://behindthebuckpass.com/wp-content/uploads/imagn-images/2017/07/16841573.jpeg" width="500px" class="melhor-jogador">
+
+    <div class="text-box text-box-2">
+        <h2>Melhor jogador do time</h2>
+        <p>Giannis Antetokounmpo, Campeão da nba e MVP das finais levou o
+            Milwaukee Bucks a vitoria depois de 47 sem saber o que era vencer um titutlo.
+            No comfronto contra o Phoenix Suns por 105 a 98,
+            no início da madrugada desta quarta-feira, 21, na Fiserv Arena, em Milwaukee.
+            Com este triunfo, a equipe de Wisconsin fechou a série final por 4 a 2.
+            O astro grego tornou-se terceiro estrangeiro
+            da história da NBA a ser eleito o MVP de uma série das finais.
+        </p>
+    </div>
+
+
+    <footer>
+        <img src="img/logo.png" alt="">
+        <p>2021, Nenhum direito reservado 😉<br>NBA por favor não me processe 🙏</p>
+    </footer>
+
+    <script>
+        const audio = document.querySelector('audio')
+        async function tocarMusica() {
+            let num = Math.round((Math.random() * 10) / 2);
+            audio.src = `musica${num}.mp3`;
+            audio.volume = 0.07;
+            await audio.play();
+        }
+        function pausarMusica() {
+            audio.pause();
+        }
+    </script>
+</body>
+
+</html>

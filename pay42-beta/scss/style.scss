@@ -1,0 +1,321 @@
+@mixin resposivo() {
+  @media (max-width: 1050px) {
+    @content;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  @include resposivo() {
+    font-size: 12px;
+  }
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+$purple: #694981;
+$purple-dark: #2a1d34;
+$white: #fff;
+@mixin tamanho($tamanho) {
+  font-family: 'Poppins', sans-serif;
+  color: $purple;
+  font-weight: normal;
+  @if $tamanho == 16 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  } @else if $tamanho == 20 {
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+  } @else if $tamanho == 24 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  } @else if $tamanho == 32 {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  } @else if $tamanho == 48 {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+@keyframes slide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+}
+header {
+  width: 100%;
+  padding: 25px 0;
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    @include resposivo() {
+      display: block;
+    }
+    img {
+      @include resposivo() {
+        margin: 0 auto;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    @include resposivo() {
+      display: block;
+    }
+  }
+  li {
+    margin-left: 15px;
+    @include resposivo() {
+      margin-left: 0;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+    @include resposivo() {
+      display: block;
+      margin: 10px 0;
+    }
+    a {
+      padding: 5px 0;
+      @include resposivo() {
+        text-align: center;
+        border: 1px solid $purple;
+        border-radius: 15px;
+        display: block;
+      }
+      @include resposivo() {
+        &:hover {
+          background-color: $purple;
+          color: $white;
+        }
+      }
+      &:hover {
+        border-bottom: 1px solid $purple;
+      }
+    }
+  }
+  .nav-2 {
+    li:nth-child(2) a {
+      padding-left: 15px;
+      padding-right: 15px;
+      border: 1px solid $purple;
+      border-radius: 15px;
+      &:hover {
+        background-color: $purple;
+        color: $white;
+      }
+    }
+  }
+  a {
+    @include tamanho(20);
+  }
+}
+.intro {
+  background: url('../img/intro-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+.intro div {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  .msg {
+    margin: 0 auto;
+    max-width: 840px;
+    h1 {
+      @include tamanho(48);
+      color: $white;
+    }
+    h2 {
+      margin-top: 60px;
+      @include tamanho(20);
+      color: $white;
+    }
+  }
+}
+.list {
+  margin-top: 80px;
+  div {
+    display: flex;
+    text-align: center;
+    @include resposivo() {
+      display: block;
+    }
+    #facilidade {
+      transform: translateX(-20px);
+      animation: slide 1.5s forwards;
+    }
+    #seguranca {
+      transform: translateY(-20px);
+      animation: slide 1.5s forwards;
+    }
+    #agilidade {
+      transform: translateX(20px);
+      animation: slide 1.5s forwards;
+    }
+    .item {
+      margin: 0 auto;
+      display: block;
+      @include resposivo() {
+        margin-top: 50px;
+        &:first-child {
+          @include resposivo() {
+            margin-top: 0;
+          }
+        }
+      }
+      img {
+        margin: 0 auto;
+      }
+      h3 {
+        @include tamanho(24);
+      }
+      div {
+        margin: 0 auto;
+        margin-top: 25px;
+        max-width: 330px;
+        @include tamanho(16);
+        color: $purple-dark;
+      }
+    }
+  }
+}
+.mapa div {
+  text-align: center;
+  margin-top: 100px;
+  h3 {
+    @include tamanho(24);
+    &:after {
+      content: '';
+      display: block;
+      width: 180px;
+      height: 2px;
+      background-color: $purple;
+      margin: 0 auto;
+    }
+  }
+  div {
+    @include tamanho(24);
+    margin-top: 15px;
+    font-weight: normal;
+    text-transform: unset;
+  }
+  img {
+    opacity: 0;
+    margin: 0 auto;
+    margin-top: 80px;
+    &#mapa {
+      transform: translateY(40px);
+      animation: slide 1.5s forwards 1.5s;
+    }
+  }
+}
+footer {
+  margin-top: 100px;
+}
+footer div {
+  h3 {
+    text-align: center;
+    @include tamanho(24);
+  }
+  .infos {
+    padding: 80px 0;
+    display: flex;
+    @include resposivo() {
+      display: block;
+    }
+    .info {
+      width: 50%;
+      @include resposivo() {
+        width: 100%;
+      }
+      &:first-child {
+        div:first-child {
+          margin: 0 auto;
+          max-width: 488px;
+          @include tamanho(32);
+          &::after {
+            content: '';
+            margin-top: 40px;
+            margin-right: auto;
+            display: block;
+            width: 431px;
+            height: 2px;
+            background-color: $purple;
+          }
+        }
+        div:last-child {
+          text-align: center;
+          margin-top: 80px;
+          @include tamanho(20);
+        }
+      }
+      &:last-child {
+        form {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          @include resposivo() {
+            align-items: center;
+          }
+          input,
+          textarea {
+            display: flex;
+            width: 415px;
+            margin-top: 15px;
+            padding: 20px 15px;
+            border: 2px solid $purple;
+            border-radius: 15px;
+            @include resposivo() {
+              width: 300px;
+            }
+            &::placeholder {
+              @include tamanho(16);
+            }
+            &:first-child {
+              margin-top: 0;
+            }
+            &:last-child {
+              background-color: $purple;
+              color: $white;
+              width: 215px;
+              &:hover {
+                background-color: $white;
+                color: $purple;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

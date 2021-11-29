@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #262626;
+}
+body{
+    background-color: #fafafa;
+}
+*:focus{
+    outline: 0;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    margin: 0 auto;
+    max-width: 935px;
+    padding: 0 20px;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+header{
+    background-color:#fff;
+    border-top: 1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+}
+.header > a{
+    width: 102px;
+    height: 28px;
+}
+.header input{
+    width: 215px;
+    height: 23px;
+    background-color: #fafafa;
+    border: 1px solid #DBDBDB;
+}
+.header input::placeholder {
+    text-align: center;
+    font-weight: 300;
+}
+.header nav img {
+    width: 19px;
+    height: 19px;
+}
+.header nav ul{
+    display: flex;
+}
+.header nav li{
+    margin-right: 22px;
+}
+.header nav li:last-child img{
+    border-radius: 50%;
+}
+.header nav li:last-child{
+    margin-right: 0;
+}
+.main{
+    display: grid;
+    grid-template-areas: "main aside";
+}
+main{
+    grid-area: main;
+}
+#nav{
+    display: flex;
+    margin-top: 30px;
+    padding: 16px 0;
+    height: 120px;
+    padding-left: 10px;
+    background-color: #fff;
+    border: 1px solid #DBDBDB;
+    overflow-x: auto;
+    max-width: 613px;
+}
+#nav .status{
+    padding: 0 4px;
+    cursor: pointer;
+}
+#nav .status img{
+    width: 66px;
+    height: 66px;
+    border: 3px solid #DA3482;
+    background: linear-gradient(45deg, #F7833C 0.62%, #DA3482 99.64%);
+    border-radius: 50%;
+}
+#nav .status span{
+    font-size: 12px;
+    color:#262626;
+}
+aside{
+    max-width: 293px;
+    grid-area: aside;
+    margin-top: 30px;
+}
+.ft{
+    background-color: #fff;
+    margin-top: 30px;
+    max-width: 613px;
+}
+.ft-header{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #DBDBDB;
+    border-bottom: 0;
+}
+.ft-header span{
+    margin-left: 10px;
+}
+.ft-header img{
+    width: 32px;
+    border-radius: 50%;
+}
+.ft img{
+    border: 1px solid #DBDBDB;
+}
+
