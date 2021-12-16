@@ -4779,6 +4779,10 @@ nav.template-main-menu > ul > li > ul > li:hover ul.third-level {
   transition: all 0.5s ease-in-out;
 }
 
+.default-logo{
+  max-width: 130px;
+}
+
 .navbar-layout1 nav.template-main-menu > ul > li > a {
   color: #ffffff;
   padding: 50px 20px;
