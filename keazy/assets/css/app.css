@@ -4782,6 +4782,9 @@ nav.template-main-menu > ul > li > ul > li:hover ul.third-level {
 .default-logo{
   max-width: 130px;
 }
+.rocket-icon{
+  -webkit-text-fill-color: white;
+}
 
 .navbar-layout1 nav.template-main-menu > ul > li > a {
   color: #ffffff;
