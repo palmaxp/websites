@@ -4785,6 +4785,9 @@ nav.template-main-menu > ul > li > ul > li:hover ul.third-level {
 .rocket-icon{
   -webkit-text-fill-color: white;
 }
+.text-white-75 {
+  color: rgba(255,255,255,.75) !important;
+}
 
 .navbar-layout1 nav.template-main-menu > ul > li > a {
   color: #ffffff;
