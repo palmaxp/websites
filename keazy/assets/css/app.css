@@ -4804,7 +4804,9 @@ header img{
   max-width: 200px;
   margin: 0 auto;
 }
-
+.pricing-wrap-layout1{
+  padding: 90px 0 150px 0;
+}
 .payments-list{
   margin-top: 20px;
   max-width: 100%;
