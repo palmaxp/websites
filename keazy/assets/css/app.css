@@ -4793,6 +4793,7 @@ nav.template-main-menu > ul > li > ul > li:hover ul.third-level {
   font-family: 'Baloo 2', Helvetica, sans-serif;
   font-size: 60px;
   text-align: center;
+  color:#5A30F2;
 }
 .footer{
   padding: 75px 0;
