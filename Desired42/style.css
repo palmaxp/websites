@@ -93,10 +93,24 @@ header ul li a:first-child {
 }
 .intro {
   background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(147deg, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(147deg, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(147deg, #2C5364, #203A43, #0F2027, #203A43, #33677e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(147deg, #2C5364, #203A43, #0F2027, #203A43,#33677e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 400% 400%;
   height: 80vh;
+  animation: colors 5s ease infinite alternate;
 }
+@keyframes colors {
+  0%{
+    background-position: 0% 0%;
+  }
+  50%{
+    background-position: 50% 75%;
+  }
+  100%{
+    background-position: 100% 90%;
+  }
+}
+
 .intro > div {
   display: flex;
   align-items: center;
@@ -148,9 +162,11 @@ header ul li a:first-child {
 }
 .brands {
   background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(47deg, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(47deg, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(147deg, #2C5364, #203A43, #0F2027, #203A43, #33677e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(147deg, #2C5364, #203A43, #0F2027, #203A43,#33677e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 120px 0 ;
+  background-size: 400% 400%;
+  animation: colors 5s ease infinite alternate;
 }
 .brands h3 {
   color: #fff;
