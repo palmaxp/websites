@@ -42,15 +42,14 @@ ul {
 }
 header {
   padding: 15px 0;
-  background-color: black;
+  background-color: #222;
 }
 header img {
   width: 50px;
 }
 .brand div{
+  font-family: "Poppins", sans-serif;
   padding: 0px;
-}
-.brand div{
   margin-left: 8px;
 }
 .brand:hover {
@@ -76,7 +75,7 @@ header ul li a {
 }
 .btn:hover {
   border-bottom: 0px;
-  background-color: black;
+  background-color: #222;
   color: white;
   outline: 1px solid white;
 }
@@ -87,7 +86,7 @@ header ul li a:first-child {
   margin-left: 0;
 }
 .btn {
-  color: black;
+  color: #222;
   padding: 15px 15px;
   background-color: white;
 }
@@ -145,12 +144,12 @@ header ul li a:first-child {
 .about h2 {
   font-size: 70px;
   padding: 0 15px;
-  color: black;
+  color: #222;
 }
 .about p {
   max-width: 610px;
   margin: 0 auto;
-  color: black;
+  color: #222;
   opacity: 0.7;
 }
 .about .about-image {
@@ -189,10 +188,10 @@ header ul li a:first-child {
 }
 .brands .cta a{
   background-color: #fff;
-  color: #000;
+  color: #222;
 }
 .brands .cta a:hover{
-  background-color: #000;
+  background-color: #222;
   color: #fff;
   outline: 1px solid #fff;
 }
@@ -230,7 +229,7 @@ header ul li a:first-child {
   background-color: #ea1d2c;
 }
 #uber {
-  background-color: black;
+  background-color: #222;
 }
 #nubank {
   background-color: #820ad1;
@@ -250,22 +249,22 @@ header ul li a:first-child {
 }
 .cta .btn {
   display: inline-block;
-  background-color: black;
+  background-color: #222;
   color: white;
   padding: 15px;
   margin-top: 15px;
 }
 .cta .btn:hover {
   background-color: white;
-  color: black;
-  outline: 1px solid black;
+  color: #222;
+  outline: 1px solid #222;
 }
 .we-do {
   padding: 120px 0;
 }
 .we-do h2,
 .we-do p {
-  color: black;
+  color: #222;
 }
 .we-do p {
   opacity: 0.7;
@@ -326,14 +325,14 @@ header ul li a:first-child {
   opacity: 0.7;
 }
 .we-do .cta span{
-  color: #000;
+  color: #222;
 }
 .we-do .cta{
   margin-top: 60px !important;
 }
 
 .faq{
-  background-color: #000;
+  background-color: #222;
   padding: 120px;
   text-align: center;
 }
@@ -352,8 +351,9 @@ footer img{
   margin: 0 auto;
 }
 footer div{
-  color: #000;
+  color: #222;
   text-align: center;
+  font-size: 14px;
 }
 
 
@@ -367,7 +367,7 @@ footer div{
     width: 100%;
     top: 80px;
     left: 0;
-    background-color: black;
+    background-color: #222;
     z-index: 9999999;
     height: 0;
     transition: 0.6s;
@@ -400,7 +400,7 @@ footer div{
   }
   #menu li a:hover {
     background-color: white;
-    color: black;
+    color: #222;
   }
   #btn-mobile {
     display: flex;
@@ -552,4 +552,9 @@ footer div{
     text-align: left;
     line-height: 1.5rem;
   }
+}
+
+
+h1{
+  visibility: hidden;
 }
