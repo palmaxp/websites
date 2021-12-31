@@ -9,6 +9,7 @@
   <title>Desired42 - Home</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,7 +19,7 @@
       <a href="#">
         <div class="brand">
           <img src="./img/logo.svg" alt="Logo da Desired42">
-          <span>Desired42</span>
+          <div>Desired42</div>
         </div>
       </a>
 
@@ -27,17 +28,17 @@
           <span id="hamburguer"></span>
         </button>
         <ul id="menu">
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Marcas</a></li>
-          <li><a href="#">O Que Fazemos</a></li>
-          <li><a href="#">Nosso Time</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#brands">Marcas</a></li>
+          <li><a href="#we-do">O Que Fazemos</a></li>
+          <!-- <li><a href="#">Nosso Time</a></li> -->
           <li><a class="btn" href="#">Agendar Orçamento</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="intro">
+  <section id="intro" class="intro">
     <div class="container">
       <div>
         <h1>Da ideia, ao Software</h1>
@@ -49,51 +50,86 @@
     </div>
   </section>
 
-  <section class="about">
+  <section id="about" class="about">
     <div class="container">
       <h2>Sobre</h2>
       <div class="container text-content">
+        <div class="text-content">
         <p>Somos especialistas em desenvolvimento de software. Atuamos na concepção, desenvolvimento de plataformas e sistemas tanto mobile quanto desktop. Design, agilidade e tecnologia nos permitem apoiar a inovação, a transformação digital de empresas.</p>
         <div class="about-image">
           <img src="img/mobile.svg" alt="Ilustração de celular">
         </div>
       </div>
+      </div>
     </div>
   </section>
 
-  <section class="brands">
+  <section id="brands" class="brands">
     <div class="container">
       <div class="text-content">
-        <h2>Utilizamos técnologias que gigantes da inovação também usam</h2>
-        <span>React.JS, React Native, NodeJS</span>
+        <h3>Utilizamos técnologias que gigantes da inovação também usam</h3>
+        <div class="text-content-text">ReactJS, React Native, NodeJS.</div>
       </div>
       <div class="brands-content">
-        <div id="facebook"><img src="img/brands/facebook.svg" alt=""></div>
-        <div id="instagram"><img src="img/brands/instagram.svg" alt=""></div>
-        <div id="ifood"><img src="img/brands/ifood.svg" alt=""></div>
-        <div id="uber"><img src="img/brands/uber.svg" alt=""></div>
-        <div id="nubank"><img src="img/brands/nubank.svg" alt=""></div>
-        <div id="tesla"><img src="img/brands/tesla.svg" alt=""></div>
-        <div id="discord"><img src="img/brands/discord.svg" alt=""></div>
-        <div id="airbnb"><img src="img/brands/airbnb.svg" alt=""></div>
+        <div class="brands-content-item" id="facebook"><img src="img/brands/facebook.svg" alt=""></div>
+        <div class="brands-content-item" id="instagram"><img src="img/brands/instagram.svg" alt=""></div>
+        <div class="brands-content-item" id="ifood"><img src="img/brands/ifood.svg" alt=""></div>
+        <div class="brands-content-item" id="uber"><img src="img/brands/uber.svg" alt=""></div>
+        <div class="brands-content-item" id="nubank"><img src="img/brands/nubank.svg" alt=""></div>
+        <div class="brands-content-item" id="airbnb"><img src="img/brands/airbnb.svg" alt=""></div>
       </div>
-      <div class="cac">
+      <div class="cta">
         <span>Quer que sua empresa participe desta lista?</span>
-        <div><a class="btn" href="#">Quero Agendar um orçamento!</a> </div>
+        <div><a class="btn" href="#">Quero agendar um orçamento!</a> </div>
       </div>
     </div>
   </section>
 
-  <section class="we-do">
+  <section id="we-do" class="we-do">
     <div class="container">
       <h2>O que fazemos?</h2>
-      <div>
+      <div class="text-content">
         <p>Desenvolvemos soluções digitais. Simplificamos a tecnologia para que você possa se dedicar às demais áreas do seu negócio. Conheça nossos serviços e descubra como podemos lhe ajudar, da ideia ao software.</p>
       </div>
+      <div class="we-do-content">
+        <ul class="items">
+          <li class="item">
+            <div class="title-content">
+              <i class="las la-lightbulb"></i>
+              <h4>Concepção</h4>
+            </div>
+            <div class="text">Conte conosco para desenhar soluções digitais inovadoras e planejar o seu Mínimo Produto Viável.</div>
+          </li>
+          <li class="item">
+            <div class="title-content">
+              <i class="las la-desktop"></i>
+              <h4>Desenvolvimento de software</h4>
+            </div>
+            <div class="text">As melhores práticas de UX Design, programação e testes para construir o seu produto ou serviço.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="cta">
+      <span>Quer criar seu software? Se junte conosco.</span>
+      <div><a class="btn" href="#">Quero dar vida a minha ideia!</a></div>
     </div>
   </section>
-  <script src="script.js"></script>
+  
+  <section class="faq">
+    <h3>Ficou com alguma dúvida?</h3>
+    <div class="cta">
+      <span>Esclareça suas dúvidas nos mandando um e-mail.  </span>
+      <div><a class="btn" href="#">Mandar mensagem</a></div>
+    </div>
+  </section>
 
+  <footer>
+    <img src="img/logo.svg" alt="Desired42">
+    <div>© 2022 Todos os direitos reservados.</div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
