@@ -7,10 +7,26 @@
 }
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   font-size: 18px;
+  overflow: hidden;
+  width: 100%;
 }
+.smooth-scroll-wrapper {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.content {
+  width: 80%;
+  margin: 160px auto;
+}
+
 img{
   display: block;
   max-width: 100%;
@@ -552,9 +568,4 @@ footer div{
     text-align: left;
     line-height: 1.5rem;
   }
-}
-
-
-h1{
-  visibility: hidden;
 }

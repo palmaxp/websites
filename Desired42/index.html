@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <div>
   <header>
     <div class="container">
       <a href="#">
@@ -130,7 +131,28 @@
     <img src="img/logo.svg" alt="Desired42">
     <div>© 2022 Todos os direitos reservados.</div>
   </footer>
-  
+</div>
+
+
+  <script>const body = document.body,
+    scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+    height = scrollWrap.getBoundingClientRect().height - 1,
+      speed = 0.04;
+
+  var offset = 0;
+
+  body.style.height = Math.floor(height) + "px";
+
+  function smoothScroll() {
+      offset += (window.pageYOffset - offset) * speed;
+
+      var scroll = "translateY(-" + offset + "px) translateZ(0)";
+      scrollWrap.style.transform = scroll;
+
+      callScroll = requestAnimationFrame(smoothScroll);
+  }
+
+  smoothScroll();</script>
   <script src="script.js"></script>
 </body>
 
