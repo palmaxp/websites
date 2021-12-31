@@ -447,6 +447,7 @@ footer div{
     background-color: currentColor;
     transition: 0.8s;
     position: relative;
+    color: #fff;
   }
   nav.active #hamburguer {
     transform: rotate(135deg);
