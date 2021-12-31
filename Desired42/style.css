@@ -122,7 +122,7 @@ header ul li a:first-child {
   justify-content: center;
 }
 .about {
-  padding: 90px 0;
+  padding: 120px 0;
 }
 .about .text-content {
   display: flex;
@@ -150,7 +150,7 @@ header ul li a:first-child {
   background: #0F2027;  /* fallback for old browsers */
   background: -webkit-linear-gradient(47deg, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(47deg, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding: 90px 0;
+  padding: 120px 0 ;
 }
 .brands h3 {
   color: #fff;
@@ -164,6 +164,9 @@ header ul li a:first-child {
 }
 .brands .text-content-text {
   opacity: 0.7;
+}
+.brands .cta{
+  margin-top: 60px;
 }
 .brands .cta span{
   color: #fff;
@@ -242,7 +245,7 @@ header ul li a:first-child {
   outline: 1px solid black;
 }
 .we-do {
-  padding: 90px 0;
+  padding: 120px 0;
 }
 .we-do h2,
 .we-do p {
@@ -309,15 +312,21 @@ header ul li a:first-child {
 .we-do .cta span{
   color: #000;
 }
+.we-do .cta{
+  margin-top: 60px !important;
+}
 
 .faq{
   background-color: #000;
-  padding: 80px;
+  padding: 120px;
   text-align: center;
 }
 .faq .btn{
   border: 1px solid #fff;
   color:#fff;
+}
+.faq .cta{
+  margin-top: 60px;
 }
 
 footer{
@@ -475,10 +484,10 @@ footer div{
     text-align: left;
   }
   .about,.brands{
-    padding: 50px 0px;
+    padding: 60px 0px;
   }
   .intro .container{
-    padding: 50px 0;
+    padding: 60px 0;
   }
   .intro img{
     max-width: 300px;
@@ -507,5 +516,11 @@ footer div{
   }
   .we-do-content .item:first-child{
     margin-top: 24px;
+  }
+  .we-do {
+    padding: 60px 0;
+  }
+  .faq {
+    padding: 60px 0;
   }
 }
