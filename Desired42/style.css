@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
   transition: all 0.5s;
 }
 html{
@@ -59,6 +58,10 @@ ul {
 header {
   padding: 15px 0;
   background-color: #222;
+  color: #fff;
+}
+header a {
+  color: #fff;
 }
 header img {
   width: 50px;
@@ -136,8 +139,10 @@ header ul li a:first-child {
   font-size: 3.889rem;
   line-height: 5rem;
   max-width: 500px;
+  color: #fff;
 }
 .intro p {
+  color: #fff;
   max-width: 450px;
   margin-top: 16px;
   opacity: 0.7;
@@ -349,6 +354,7 @@ header ul li a:first-child {
 
 .faq{
   background-color: #222;
+  color:#fff;
   padding: 120px;
   text-align: center;
 }
