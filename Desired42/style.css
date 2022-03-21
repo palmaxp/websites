@@ -609,3 +609,25 @@ footer div {
 		line-height: 1.5rem;
 	}
 }
+
+.politics {
+	padding: 50px 0;
+	max-width: 800px;
+	margin: 0 auto;
+}
+.politics p {
+	font-weight: 400;
+	margin: 15px 0;
+	font-size: 14px;
+}
+.politics li {
+	font-weight: 400;
+	margin: 15px 0;
+	font-size: 14px;
+}
+.politics h2 {
+	margin: 24px 0;
+}
+.politics h3 {
+	margin: 20px 0;
+}
