@@ -168,6 +168,15 @@ img {
 	}
 	header {
 		padding-top: 32px;
+		.nav-2 {
+			li {
+				padding: 15px 0 !important;
+				height: 100%;
+				a {
+					text-decoration: none;
+				}
+			}
+		}
 		nav {
 			display: flex;
 			justify-content: space-between;

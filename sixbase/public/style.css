@@ -201,6 +201,15 @@ img {
   padding-top: 32px;
 }
 
+.intro header .nav-2 li {
+  padding: 15px 0 !important;
+  height: 100%;
+}
+
+.intro header .nav-2 li a {
+  text-decoration: none;
+}
+
 .intro header nav {
   display: -webkit-box;
   display: -ms-flexbox;
