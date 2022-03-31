@@ -11,6 +11,21 @@ let arrowsSolutionArr = '';
 let index = 0;
 let indexTab = 0;
 
+var images = [];
+function preload() {
+	for (var i = 0; i < arguments.length; i++) {
+		images[i] = new Image();
+		images[i].src = preload.arguments[i];
+	}
+}
+
+//-- usage --//
+preload(
+	'./images/solutions-icons/photo/0.jpg',
+	'./images/solutions-icons/photo/1.jpg',
+	'./images/solutions-icons/photo/2.jpg',
+);
+
 const menuMobile = () => {
 	const menu = document.querySelector('#menu .nav-2');
 	menu.classList.toggle('disabled');

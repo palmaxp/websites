@@ -174,7 +174,7 @@ img {
 			align-items: center;
 			ul {
 				display: flex;
-				li {
+				.li-1 {
 					font-size: 16px;
 					margin-left: 32px !important;
 					color: #fff;
@@ -198,6 +198,23 @@ img {
 							width: 32px;
 							height: 2px;
 							background-color: #574cdd;
+						}
+					}
+				}
+				.btn-1 {
+					font-size: 16px;
+					margin-left: 32px !important;
+					padding: 0 !important;
+					&:last-child {
+						margin-left: 16px !important;
+					}
+					a {
+						display: block;
+						padding: 8px 16px;
+						text-decoration: none;
+						color: #fff;
+						&:hover {
+							color: #574cdd !important;
 						}
 					}
 				}
@@ -228,6 +245,7 @@ img {
 			}
 		}
 		h2 {
+			max-width: 460px !important;
 			margin-top: 35px;
 			font-size: 18px;
 			font-weight: 400;
@@ -363,7 +381,7 @@ img {
 	}
 	.sixbase-plataform {
 		position: absolute;
-		top: 335px;
+		top: 400px;
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
@@ -414,6 +432,8 @@ img {
 		margin-top: 87px;
 	}
 	.solutions-content {
+		--bs-gutter-x: 0 !important;
+		--bs-gutter-y: 0 !important;
 		justify-content: space-between;
 		.left-ul {
 			li {
@@ -464,7 +484,7 @@ img {
 				align-items: center;
 			}
 			.text {
-				margin-left: 16px;
+				margin-left: 8px;
 				color: #191821;
 			}
 		}
@@ -584,16 +604,22 @@ img {
 					padding: 12px !important;
 					width: 53px !important;
 					height: 53px !important;
+					border: 3px solid #574cdd !important;
+					svg {
+						path {
+							fill: #574cdd;
+						}
+					}
 					&:last-child {
 						svg {
 							transform: rotate(180deg);
 						}
 					}
 					&.activeArrow {
-						border: 3px solid #574cdd;
+						border: 0px !important;
 						svg {
 							path {
-								fill: #574cdd;
+								fill: #afafaf;
 							}
 						}
 					}
@@ -736,6 +762,9 @@ footer {
 	background: url('./images/footer/bg.jpg ') center center;
 	background-size: cover;
 	padding: 100px 0 31px 0;
+	.h2-mobile {
+		display: none;
+	}
 	h2 {
 		font-size: 27px;
 		span {
@@ -938,7 +967,7 @@ footer {
 				margin-top: 35px;
 				max-width: 420px;
 			}
-			ul {
+			.activeArrow {
 				justify-content: center;
 				margin-top: 40px !important;
 				margin-bottom: 50px !important;
@@ -1029,6 +1058,13 @@ footer {
 		}
 	}
 	footer {
+		.h2-mobile {
+			display: block;
+			text-align: center;
+			margin-bottom: 50px !important;
+			font-weight: 500;
+			font-size: 27px;
+		}
 		.footer-bottom {
 			margin-top: 31px;
 		}
@@ -1107,6 +1143,7 @@ footer {
 				}
 			}
 			h2 {
+				max-width: 360px !important;
 				margin-top: 16px;
 				font-size: 14px;
 			}
@@ -1140,6 +1177,7 @@ footer {
 	}
 	.plataform {
 		.sixbase-plataform {
+			top: 335px !important;
 			padding: 0 20px;
 		}
 		h2 {
@@ -1196,7 +1234,6 @@ footer {
 						margin-left: 0px !important;
 					}
 					div {
-						margin-left: 8px !important;
 					}
 				}
 			}

@@ -219,13 +219,13 @@ img {
   display: flex;
 }
 
-.intro header nav ul li {
+.intro header nav ul .li-1 {
   font-size: 16px;
   margin-left: 32px !important;
   color: #fff;
 }
 
-.intro header nav ul li a {
+.intro header nav ul .li-1 a {
   display: block;
   padding: 8px 0;
   text-decoration: none;
@@ -247,6 +247,27 @@ img {
   width: 32px;
   height: 2px;
   background-color: #574cdd;
+}
+
+.intro header nav ul .btn-1 {
+  font-size: 16px;
+  margin-left: 32px !important;
+  padding: 0 !important;
+}
+
+.intro header nav ul .btn-1:last-child {
+  margin-left: 16px !important;
+}
+
+.intro header nav ul .btn-1 a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.intro header nav ul .btn-1 a:hover {
+  color: #574cdd !important;
 }
 
 .intro header nav ul .li-2 li:hover {
@@ -275,6 +296,7 @@ img {
 }
 
 .intro .left h2 {
+  max-width: 460px !important;
   margin-top: 35px;
   font-size: 18px;
   font-weight: 400;
@@ -426,7 +448,7 @@ img {
 
 .plataform .sixbase-plataform {
   position: absolute;
-  top: 335px;
+  top: 400px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -499,6 +521,8 @@ img {
 }
 
 .solutions .solutions-content {
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0 !important;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -570,7 +594,7 @@ img {
 }
 
 .solutions .left-ul li .text {
-  margin-left: 16px;
+  margin-left: 8px;
   color: #191821;
 }
 
@@ -711,11 +735,16 @@ img {
   padding: 12px !important;
   width: 53px !important;
   height: 53px !important;
+  border: 3px solid #574cdd !important;
 }
 
 .solutions .info .content .arrowsSolution .arrowSolution:first-child {
   margin-right: 28px !important;
   border: 0px;
+}
+
+.solutions .info .content .arrowsSolution .arrowSolution svg path {
+  fill: #574cdd;
 }
 
 .solutions .info .content .arrowsSolution .arrowSolution:last-child svg {
@@ -724,11 +753,11 @@ img {
 }
 
 .solutions .info .content .arrowsSolution .arrowSolution.activeArrow {
-  border: 3px solid #574cdd;
+  border: 0px !important;
 }
 
 .solutions .info .content .arrowsSolution .arrowSolution.activeArrow svg path {
-  fill: #574cdd;
+  fill: #afafaf;
 }
 
 .solutions .info .aws {
@@ -905,6 +934,10 @@ footer {
   background: url("./images/footer/bg.jpg ") center center;
   background-size: cover;
   padding: 100px 0 31px 0;
+}
+
+footer .h2-mobile {
+  display: none;
 }
 
 footer h2 {
@@ -1152,7 +1185,7 @@ footer .footer-bottom .btn svg {
     margin-top: 35px;
     max-width: 420px;
   }
-  .intro .left ul {
+  .intro .left .activeArrow {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1241,6 +1274,13 @@ footer .footer-bottom .btn svg {
     margin-bottom: 0px !important;
     margin-right: 0 !important;
   }
+  footer .h2-mobile {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px !important;
+    font-weight: 500;
+    font-size: 27px;
+  }
   footer .footer-bottom {
     margin-top: 31px;
   }
@@ -1323,6 +1363,7 @@ footer .footer-bottom .btn svg {
     line-height: 2rem;
   }
   .intro .left h2 {
+    max-width: 360px !important;
     margin-top: 16px;
     font-size: 14px;
   }
@@ -1360,6 +1401,7 @@ footer .footer-bottom .btn svg {
     margin-top: 8px;
   }
   .plataform .sixbase-plataform {
+    top: 335px !important;
     padding: 0 20px;
   }
   .plataform h2 {
@@ -1410,9 +1452,6 @@ footer .footer-bottom .btn svg {
   }
   .solutions .solutions-content .left-ul li:first-child {
     margin-left: 0px !important;
-  }
-  .solutions .solutions-content .left-ul li div {
-    margin-left: 8px !important;
   }
   .solutions .right .content .text p {
     font-size: 16px;
