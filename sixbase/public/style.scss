@@ -273,7 +273,7 @@ img {
 			margin-bottom: 100px !important;
 			display: flex;
 			li {
-				margin-right: 35px !important;
+				margin-right: 33px !important;
 				display: flex;
 				align-items: center;
 				.text {
@@ -964,6 +964,7 @@ footer {
 	}
 	.intro {
 		text-align: center;
+
 		.left {
 			padding-top: 70px;
 			h1 {
@@ -980,6 +981,9 @@ footer {
 				justify-content: center;
 				margin-top: 40px !important;
 				margin-bottom: 50px !important;
+			}
+			ul {
+				justify-content: center !important;
 			}
 		}
 		.right {
@@ -1161,14 +1165,15 @@ footer {
 				font-size: 16px;
 			}
 			ul {
-				margin: 0 auto !important;
+				margin: 0 !important;
+				padding: 0 !important;
 				margin-top: 24px !important;
-				max-width: 400px;
 				li {
 					display: flex;
 					flex-direction: column;
 					align-items: center;
 					margin-right: 0 !important;
+					max-width: 120px;
 					:nth-child(2) {
 						margin-left: 16px !important;
 						margin-right: 16px !important;

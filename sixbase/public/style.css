@@ -331,7 +331,7 @@ img {
 }
 
 .intro .left ul li {
-  margin-right: 35px !important;
+  margin-right: 33px !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1201,6 +1201,11 @@ footer .footer-bottom .btn svg {
     margin-top: 40px !important;
     margin-bottom: 50px !important;
   }
+  .intro .left ul {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
   .intro .right img {
     margin: 0 auto;
   }
@@ -1381,9 +1386,9 @@ footer .footer-bottom .btn svg {
     font-size: 16px;
   }
   .intro .left ul {
-    margin: 0 auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
     margin-top: 24px !important;
-    max-width: 400px;
   }
   .intro .left ul li {
     display: -webkit-box;
@@ -1397,6 +1402,7 @@ footer .footer-bottom .btn svg {
         -ms-flex-align: center;
             align-items: center;
     margin-right: 0 !important;
+    max-width: 120px;
   }
   .intro .left ul li :nth-child(2) {
     margin-left: 16px !important;
